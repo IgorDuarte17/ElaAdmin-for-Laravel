@@ -1,0 +1,16 @@
+COMANDOS UTEIS
+php artisan make:migration CreateNomeTable
+
+php artisan make:seed NomeTableSeeder
+
+php artisan migrate:refresh --seed
+
+
+HORAS TRABALHADAS
+11/11/19 - 19h as 22:20h / Total 3:20h
+
+Criando estrutura básica do projeto + repositório	20min
+Modelagem do Banco de Dados / Diagrama ER		40min
+Criação de Tabelas (Migrations + Seeders)		1h
+Implementação do template ElaAdmin			1h
+Gestão do Projeto + Github				20min

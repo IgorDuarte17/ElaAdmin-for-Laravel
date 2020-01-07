@@ -39,6 +39,8 @@
         <div id="right-panel" class="right-panel">
             <!-- Header-->
             @include('layouts.header')
+            <!-- Informations of Page -->
+            @yield('infos')
             <!-- Content -->
             <div class="content">
                 @yield('content')

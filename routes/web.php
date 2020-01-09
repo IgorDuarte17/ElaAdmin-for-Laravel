@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/home',  'HomeController@index')->name('home');
+Route::prefix('home')->group(function ()
+{
+    Route::get('/dashboard',  'HomeController@index')->name('dashboard');
+});
 
 Route::prefix('components')->group(function ()
 {

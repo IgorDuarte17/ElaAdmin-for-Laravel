@@ -51,3 +51,7 @@ Route::prefix('/icons')->group(function ()
     Route::get('themify', 'IconsController@themify')->name('themify');
 });
 
+Route::prefix('/widgets')->group(function ()
+{
+    Route::get('widgets', 'WidgetsController@widgets')->name('widgets');
+});

@@ -55,3 +55,10 @@ Route::prefix('/widgets')->group(function ()
 {
     Route::get('widgets', 'WidgetsController@widgets')->name('widgets');
 });
+
+Route::prefix('/charts')->group(function ()
+{
+    Route::get('chartjs', 'ChartsController@chartjs')->name('chartjs');
+    Route::get('flot', 'ChartsController@flot')->name('flot');
+    Route::get('peity', 'ChartsController@peity')->name('peity');
+});

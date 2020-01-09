@@ -38,3 +38,9 @@ Route::prefix('/tables')->group(function ()
     Route::get('basic-table', 'TablesController@basic')->name('basic_table');
     Route::get('data-table', 'TablesController@data')->name('data_table');
 });
+
+Route::prefix('/forms')->group(function ()
+{
+    Route::get('basic-form', 'FormsController@basic')->name('basic_form');
+    Route::get('advanced-form', 'FormsController@advanced')->name('advanced_form');
+});

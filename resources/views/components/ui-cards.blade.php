@@ -40,7 +40,7 @@
                     </div>
                     <div class="card-body">
                         <div class="mx-auto d-block">
-                            <img class="rounded-circle mx-auto d-block" src="images/admin.jpg" alt="Card image cap">
+                            <img class="rounded-circle mx-auto d-block" src="../images/admin.jpg" alt="Card image cap">
                             <h5 class="text-sm-center mt-2 mb-1">Steven Lee</h5>
                             <div class="location text-sm-center"><i class="fa fa-map-marker"></i> California, United States</div>
                         </div>
@@ -60,7 +60,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="mx-auto d-block">
-                            <img class="rounded-circle mx-auto d-block" src="images/admin.jpg" alt="Card image cap">
+                            <img class="rounded-circle mx-auto d-block" src="../images/admin.jpg" alt="Card image cap">
                             <h5 class="text-sm-center mt-2 mb-1">Steven Lee</h5>
                             <div class="location text-sm-center"><i class="fa fa-map-marker"></i> California, United States</div>
                         </div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="card-body">
                         <div class="mx-auto d-block">
-                            <img class="rounded-circle mx-auto d-block" src="images/admin.jpg" alt="Card image cap">
+                            <img class="rounded-circle mx-auto d-block" src="../images/admin.jpg" alt="Card image cap">
                             <h5 class="text-sm-center mt-2 mb-1">Steven Lee</h5>
                             <div class="location text-sm-center"><i class="fa fa-map-marker"></i> California, United States</div>
                         </div>
@@ -109,7 +109,7 @@
                         <div class="card-header user-header alt bg-dark">
                             <div class="media">
                                 <a href="#">
-                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/admin.jpg">
+                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="../images/admin.jpg">
                                 </a>
                                 <div class="media-body">
                                     <h2 class="text-light display-6">Jim Doe</h2>
@@ -146,7 +146,7 @@
                                 <i class="fa fa-twitter"></i>
                             </div>
                             <a href="#">
-                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/admin.jpg">
+                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="../images/admin.jpg">
                             </a>
                             <h2>Kanye West</h2>
                             <p>Just got a pretty neat project via <a href="#">@ooomf</a> - Give it a try <a href="#">http://t.co/e02DwGEeOJ</a></p>
@@ -170,7 +170,7 @@
 
                         <div class="media">
                             <a href="#">
-                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/admin.jpg">
+                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="../images/admin.jpg">
                             </a>
                             <div class="media-body">
                                 <h2 class="text-white display-6">Jim Doe</h2>

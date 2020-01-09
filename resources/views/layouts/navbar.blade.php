@@ -2,11 +2,11 @@
     <nav class="navbar navbar-expand-sm navbar-default">
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
-                <a href="{{ route('home') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                <li class="@if(Request::is('home/*')) active @endif">
+                    <a href="{{ route('dashboard') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                 </li>
                 <li class="menu-title">UI elements</li><!-- /.menu-title -->
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown @if(Request::is('components/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Components</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-puzzle-piece"></i><a href="{{ route('ui_buttons') }}">Buttons</a></li>
@@ -21,14 +21,14 @@
                         <li><i class="fa fa-file-word-o"></i><a href="{{ route('ui_typgraphy') }}">Typography</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown @if(Request::is('tables/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-table"></i><a href="{{ route('basic_table') }}">Basic Table</a></li>
                         <li><i class="fa fa-table"></i><a href="{{ route('data_table') }}">Data Table</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown @if(Request::is('forms/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-th"></i><a href="{{ route('basic_form') }}">Basic Form</a></li>
@@ -38,17 +38,17 @@
 
                 <li class="menu-title">Icons</li><!-- /.menu-title -->
 
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown @if(Request::is('icons/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-fort-awesome"></i><a href="{{ route('fontawesome') }}">Font Awesome</a></li>
                         <li><i class="menu-icon ti-themify-logo"></i><a href="{{ route('themify') }}">Themefy Icons</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="{{ route('widgets') }}"> <i class="menu-icon ti-email"></i>Widgets </a>
+                <li class="@if(Request::is('widgets/*')) active @endif">
+                    <a href="{{ route('widgets') }}"> <i class="menu-icon ti-email"></i>Widgets</a>
                 </li>
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown @if(Request::is('charts/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-line-chart"></i><a href="{{ route('chartjs') }}">Chart JS</a></li>
@@ -57,7 +57,7 @@
                     </ul>
                 </li>
 
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown  @if(Request::is('maps/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-map-o"></i><a href="{{ route('gmap') }}">Google Maps</a></li>
@@ -65,7 +65,7 @@
                     </ul>
                 </li>
                 <li class="menu-title">Extras</li><!-- /.menu-title -->
-                <li class="menu-item-has-children dropdown">
+                <li class="menu-item-has-children dropdown  @if(Request::is('pages/*')) active @endif">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>

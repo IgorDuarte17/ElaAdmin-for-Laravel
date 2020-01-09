@@ -32,3 +32,9 @@ Route::prefix('/components')->group(function ()
     Route::get('ui-grids', 'ComponentsController@grids')->name('ui_grids');
     Route::get('ui-typgraphy', 'ComponentsController@typgraphy')->name('ui_typgraphy');
 });
+
+Route::prefix('/tables')->group(function ()
+{
+    Route::get('basic-table', 'TablesController@basic')->name('basic_table');
+    Route::get('data-table', 'TablesController@data')->name('data_table');
+});

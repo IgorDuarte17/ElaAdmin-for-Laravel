@@ -62,3 +62,9 @@ Route::prefix('/charts')->group(function ()
     Route::get('flot', 'ChartsController@flot')->name('flot');
     Route::get('peity', 'ChartsController@peity')->name('peity');
 });
+
+Route::prefix('/maps')->group(function ()
+{
+    Route::get('gmap', 'MapsController@gmap')->name('gmap');
+    Route::get('vector', 'MapsController@vector')->name('vector');
+});

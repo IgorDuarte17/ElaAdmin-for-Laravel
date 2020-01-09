@@ -60,8 +60,8 @@
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-                        <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
+                        <li><i class="menu-icon fa fa-map-o"></i><a href="{{ route('gmap') }}">Google Maps</a></li>
+                        <li><i class="menu-icon fa fa-street-view"></i><a href="{{ route('vector') }}">Vector Maps</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Extras</li><!-- /.menu-title -->

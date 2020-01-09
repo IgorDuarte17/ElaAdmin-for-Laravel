@@ -32,22 +32,12 @@
         <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
     </head>
 
-    <body>
-        <!-- Left Panel -->
-        @include('layouts.navbar')
-        <!-- Right Panel -->
-        <div id="right-panel" class="right-panel">
-            <!-- Header-->
-            @include('layouts.header')
-            <!-- Informations of Page -->
-            @yield('infos')
+    <body class="bg-dark">
+        <div class="sufee-login d-flex align-content-center flex-wrap">
             <!-- Content -->
-            <div class="content">
-                @yield('content')
+            <div class="container">
+                @yield('container')
             </div>
-            <div class="clearfix"></div>
-            <!-- Footer -->
-            @include('layouts.footer')
         </div>
 
         <!-- Scripts -->

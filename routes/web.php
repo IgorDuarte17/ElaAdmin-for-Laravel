@@ -65,3 +65,10 @@ Route::prefix('maps')->group(function ()
     Route::get('/gmap', 'MapsController@gmap')->name('gmap');
     Route::get('/vector', 'MapsController@vector')->name('vector');
 });
+
+Route::prefix('extra-pages')->group(function ()
+{
+    Route::get('/login', 'PagesController@login')->name('login');
+    Route::get('/register', 'PagesController@register')->name('register');
+    Route::get('/forget', 'PagesController@forget')->name('forget');
+});

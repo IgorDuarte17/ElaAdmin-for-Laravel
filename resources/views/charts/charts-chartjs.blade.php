@@ -115,10 +115,15 @@
                     </div>
                 </div>
             </div><!-- /# column -->
-
-
-
         </div>
 
     </div>
+@stop
+
+@section('scripts')
+    <!--  Chart js -->
+    <script src="../assets/js/init/chartjs-init.js"></script>
+    <!--Flot Chart-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
 @stop

@@ -247,3 +247,9 @@
         </div> <!-- .row -->
     </div>
 @stop
+
+@section('scripts')
+    <!-- scripit init-->
+    <script src="https://cdn.jsdelivr.net/npm/peity@3.3.0/jquery.peity.min.js"></script>
+    <script src="../assets/js/init/peitychart-init.js"></script>
+@stop
